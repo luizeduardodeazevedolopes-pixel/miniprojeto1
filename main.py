@@ -1,5 +1,9 @@
+import scraper
+
+
 def main():
-    print("Bitcoin Tracker - em construção")
+    html = scraper.baixar_pagina()
+    print(f"Página baixada: {len(html)} caracteres")
 
 
 if __name__ == "__main__":
