@@ -3,7 +3,8 @@ import scraper
 
 def main():
     html = scraper.baixar_pagina()
-    print(f"Página baixada: {len(html)} caracteres")
+    preco = scraper.extrair_preco(html)
+    print(f"Bitcoin: {preco:.2f}")
 
 
 if __name__ == "__main__":
